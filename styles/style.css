@@ -1,3 +1,25 @@
+/* ВСПОМОГАТЕЛЬНЫЕ СТИЛИ */
+
+/* ниже описываются флекс-контейнеры для расположения блоков в котейнерах */
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+  /* сброс стандартных параметров списка и отступов */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,23 +31,512 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* ниже модификатор "светло-серой" темы для разделов с серым фоном */
+
+.page_theme_light {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+/* ниже описываются элементы раздела header */
+
 .header {
+  /* ниже устанавливаем размеры и ограничения для секции */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  /* относительное позиционирование для корректной расстановки элементов */
+  position: relative;
+  /* преобразуем раздел во флекс-контейнер для расстановки элементов */
+  display: flex;
+  flex-direction: row;
+  /* центровка вложенных элементов */
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/* ниже описываются элементы шапки */
+
+/* логотип */
+
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  /* задаём размер, уникальный для шапки */
+  height: 32px;
+  /* позиционируем элемент */
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  /* положение поверх других блоков */
+  z-index: 1;
+  /* лого шапки */
+  background-image: url(../images/logo_place_header.svg);
+}
+
+/* параметры логотипа в подвале  */
+
+.logo_place_footer {
+  height: 35px;
+}
+
+/* заголовок шапки */
+
+.header__title {
+  /* размер блока заголовка */
+  width: 730px;
+  /* позиционирование блока заголовка */
+  margin-left: 64px;
+  /* стиль текста заголовка */
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+/* подзаголовок шапки */
+
+.header__subtitle {
+  /* положение и размеры подзаголовка */
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  /* положение поверх других блоков */
+  z-index: 1;
+  /* стиль текста подзаголовка */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* ссылка в подзаголовке */
+
+.header_link {
+  /* стиль ссылки */
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+/* заглавная иллюстрация */
+
+.header__main-illustration {
+  /* размеры и положение заглавной картинки */
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* синий квадрат */
+
 .header__square-pic {
-  height: 568px;
+  /* размеры и положение и цвет квадрата */
   width: 568px;
+  height: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* ниже описываем стили раздела основного содержимого */
+
+.content {
+  /* сброс унаследованных от браузера отступов */
+  margin: 0;
+  padding: 0;
+}
+
+/* ниже описывается блок description */
+
+.description {
+  /* прописываем отступ от шапки */
+  margin-top: 100px;
+  display: flex;
+}
+
+/* описываем блок с двумя столбцами */
+
+.two-columns {
+  /* размеры и положение блока */
+  width: 80%;
+  margin: auto;
+  /* выравнивание элементов вдоль оси */
+  justify-content: space-between;
+}
+
+/* элемент brief */
+
+.two-columns__brief {
+  /* размер блока */
+  width: 175px;
+}
+
+/* стиль текста brief */
+
+.two-columns__title {
+    /* стиль текста */
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2f80ed;
+}
+
+/* задаётся размер элемента main-text */
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+/* стиль текста введения */
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/*  стиль промежуточного текста */
+
+.two-columns__span-accent {
+  /* стиль текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  /* отступ от основного текста */
+  margin: 30px 0;
+}
+
+/* далее описыватся раздел Цифры и факты */
+
+.digits {
+  /* выравниваем компоненты секции */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* свойства заголовков таблицы */
+
+/* общие свойства */
+
+.section-title {
+  /* размер блока и отступ от подзаголовка */
+  width: 60%;
+  margin-bottom: 20px;
+  /* стиль текста */
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* свойства заголовка для раздела digits*/
+
+.digits__section-title {
+  /* отступ для раздела digits */
+  margin-top: 100px;
+}
+
+/* свойства подзаголовков таблицы */
+
+.section-subtitle {
+    /* размеры блока */
+    width: 60%;
+    /* стиль текста */
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    /*text-align: center;*/
+}
+
+/* далее описываются свойства таблицы для тёмной темы */
+
+.section-title_theme_dark {
+  color: #fff;
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+}
+
+.table_theme_dark {
+  color: #fff;
+}
+
 .table__cell_theme_dark {
+  color: #fff;
+}
+
+.table__heading_theme_dark {
+  color: #fff;
+}
+
+.table__text_theme_dark {
+  color: #fff;
+}
+
+/* далее описывается таблица */
+
+/* общие свойства таблицы */
+
+.table {
+  /* размер таблицы */
+  width: 1100px;
+  /* далее прописывается центрирование таблицы по-горизонтали */
+  align-self: center;
+  /* делаем таблицу флекс-контейнером для выстраивания ячеек */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* свойства таблицы для секции digits */
+
+.digits__table {
+  /* отступ от следующего раздела */
+  margin-bottom: 100px;
+}
+
+/* свойства ячейки таблицы */
+
+/* общие свойства ячейки */
+
+.table__cell {
+  /* выравниваем текст справа */
+  text-align: left;
+  /* сброс стандартных параметров списка и отступов */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* свойства ячейки для раздела digits */
+
+.digits__cell {
+  margin-top: 60px;
+  width: 250px;
+}
+
+/* далее описываются свойства заголовков ячеек */
+
+/* общие свойства */
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* далее описываются свойства текста ячеек */
+
+/* общие свойства */
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* свойства текста ячеек для раздела digits */
+
+.digits__text {
+  margin-top: 20px;
+}
+
+/* далее описываем блок Фейнман */
+
+.feinman {
+  /* размер блока */
+  height: 790px;
+  /* относительное позиционирование для корректной расстановки элементов */
+  position: relative;
+  /* центрирование текста в текстовых блоках */
+  text-align: center;
+  /* далее блок преобразуется во флекс-контейнер для расстановки элементов */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* далее определяется фоновая картинка */
+  background-image: url(../images/feynman.png);
+  background-size: 867px 637px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+/* далее описаны заголовок и подзаголовок раздела Фейнман */
+
+.feinman__title {
+  /* размеры и расположение заголовка */
+  width: 648px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  align-self: center;
+  /* стиль заголовка */
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feinman__subtitle {
+  /* расположение подзаголовка */
+  align-self: center;
+  /* стиль подзаголовка */
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+/* далее описана ссылка раздела Фейнман */
+
+.feinman__link {
+  /* расположение ссылки */
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  /* стиль ссылки */
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #000;
+}
+
+/* далее описывается раздел Kaufman */
+
+.kaufman {
+  /* относительное позиционирование для корректной расстановки элементов */
+  position: relative;
+  /* преобразовал во флекс-контейнер для позиционирования элементов */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* тёмная тема */
+  background-color: #1f1f1f;
+  /* скрытие выступа треугольника */
+  overflow: hidden;
+}
+
+/* описываются свойства синего треугольника */
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+}
+
+/* далее описываются свойства таблицы для раздела Кауфман */
+
+.kaufman__section-title {
+  margin-top: 90px;
+}
+
+.kaufman__table {
+  margin-bottom: 90px;
+  z-index: 1;
+}
+
+.kaufman__cell {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+}
+
+.kaufman__heading {
+  margin-bottom: 20px;
+}
+
+/* ниже описывается подвал сайта */
+
+.footer {
+  /* определяем минимальную высоту подвала */
+  min-height: 350px;
+  /* тёмная тема */
+  background-color: #1f1f1f;
+  color: #fff;
+  /* далее блок преобразуется во флекс-контейнер для расстановки элементов */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* задаём размеры подвала  */
+
+.footer__columns {
+  width: 90%;
+  padding: 60px 0 40px;
+}
+
+/* определяем раздел подвала о копирайте */
+
+.footer__column_content_copyright {
+  /* ширина раздела */
+  flex-basis: 711px;
+  /* располагаем элементы секции */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* определяем расположение элементов в секции со ссылками */
+
+.footer__column_content_info {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* определяем расположение элементов в секции с соцсетями */
+
+.footer__column_content_social {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* элемент с именем автора */
+
+.footer__author {
+  /* определяем размер надписи */
+  margin: 18px 0 18px;
+  /* стиль текста */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* определяем стиль заголовков секций со ссылками */
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* определяем отступы списков ссылок */
+
+.footer__column-links {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+/* задаём параметры иконок соцсетей */
+
+.footer__social-icon {
+  background-size: 16px 16px;
+  margin-right: 10px;
+}
+
+/* задаём стиль ссылок */
+
+.footer__link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
 }
