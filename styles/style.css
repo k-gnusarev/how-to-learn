@@ -1,17 +1,5 @@
 /* ВСПОМОГАТЕЛЬНЫЕ СТИЛИ */
 
-/* ниже описываются флекс-контейнеры для расположения блоков в котейнерах */
-
-.flex-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-column {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
   /* сброс стандартных параметров списка и отступов */
 
 .list {
@@ -164,7 +152,12 @@
   /* размеры и положение блока */
   width: 80%;
   margin: auto;
-  /* выравнивание элементов вдоль оси */
+  /* убираем стандартное оформление списка */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* преобразуем блок во флекс-контейнер для создания столбцов */
+  display: flex;
   justify-content: space-between;
 }
 
@@ -185,11 +178,15 @@
     color: #2f80ed;
 }
 
-/* задаётся размер элемента main-text */
+/* описываем колонку main-text */
 
 .two-columns__main-text {
+  /* задаём размеры */
   width: 80%;
   min-width: 784px;
+  /* добавляем расстояние между абзацами */
+  display: grid;
+  grid-row-gap: 30px;
 }
 
 /* стиль текста введения */
@@ -200,15 +197,14 @@
   font-weight: normal;
 }
 
-/*  стиль промежуточного текста */
+/*  описываем выделенный текст */
 
 .two-columns__span-accent {
   /* стиль текста */
   line-height: 34px;
   font-size: 24px;
-  font-weight: normal;
-  /* отступ от основного текста */
-  margin: 30px 0;
+  font-weight: bold;
+
 }
 
 /* далее описыватся раздел Цифры и факты */
@@ -287,6 +283,10 @@
 .table {
   /* размер таблицы */
   width: 1100px;
+  /* убираем стандартные свойства списка */
+  list-style: none;
+  padding: 0;
+  margin: 0;
   /* далее прописывается центрирование таблицы по-горизонтали */
   align-self: center;
   /* делаем таблицу флекс-контейнером для выстраивания ячеек */
@@ -352,7 +352,7 @@
 
 .feinman {
   /* размер блока */
-  height: 790px;
+  min-height: 790px;
   /* относительное позиционирование для корректной расстановки элементов */
   position: relative;
   /* центрирование текста в текстовых блоках */
@@ -461,16 +461,25 @@
   color: #fff;
   /* далее блок преобразуется во флекс-контейнер для расстановки элементов */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+
+  /*justify-content: center;*/
+  align-items: stretch;
 }
 
-/* задаём размеры подвала  */
+/* задаём размеры и положение блока содержимого в подвале  */
 
 .footer__columns {
   width: 90%;
-  padding: 60px 0 40px;
+  margin: 60px auto 40px;
+  /* сбрасываем стандартный стиль списка */
+  padding: 0;
+  list-style: none;
+  /* преобразуем во флекс-контейнер для расстановки элементов */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* определяем раздел подвала о копирайте */
@@ -479,6 +488,7 @@
   /* ширина раздела */
   flex-basis: 711px;
   /* располагаем элементы секции */
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -523,6 +533,9 @@
 .footer__column-links {
   margin-top: 20px;
   margin-bottom: 16px;
+  /* сбрасываем стандартный стиль списка */
+  padding: 0;
+  list-style: none;
 }
 
 /* задаём параметры иконок соцсетей */
