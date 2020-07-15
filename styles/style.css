@@ -47,6 +47,14 @@
   background-image: url(../images/logo_place_header.svg);
 }
 
+/* параметры логотипа в подвале  */
+
+.logo_place_footer {
+  height: 35px;
+  /* лого шапки */
+  background-image: url(../images/logo_place_footer.svg);
+}
+
 /* заголовок шапки */
 
 .header__title {
@@ -391,11 +399,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-/* параметры логотипа в подвале  */
 
-.logo_place_footer {
-  height: 35px;
-}
 /* элемент с именем автора */
 
 .footer__author {
@@ -441,7 +445,8 @@
 /* задаём параметры иконок соцсетей */
 
 .footer__social-icon {
-  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
   margin-right: 10px;
 }
 
