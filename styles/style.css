@@ -112,14 +112,6 @@
   background-color: #2f80ed;
 }
 
-/* ниже описываем стили раздела основного содержимого */
-
-.content {
-  /* сброс унаследованных от браузера отступов */
-  margin: 0;
-  padding: 0;
-}
-
 /* ниже описывается блок description */
 
 .description {
@@ -229,7 +221,7 @@
 .table__cell {
   text-align: left;
   margin-top: 60px;
-  max-width: 250px;
+  width: 250px;
 }
 
 /* далее описываются свойства заголовков ячеек */
@@ -251,7 +243,7 @@
 
 /* далее описываем блок Фейнман */
 
-.feinman {
+.feynman {
   /* размер блока */
   min-height: 790px;
   /* относительное позиционирование для корректной расстановки элементов */
@@ -272,7 +264,7 @@
 }
 /* далее описаны заголовок и подзаголовок раздела Фейнман */
 
-.feinman__title {
+.feynman__title {
   /* размеры и расположение заголовка */
   max-width: 648px;
   margin-top: 100px;
@@ -283,7 +275,7 @@
   font-weight: bold;
 }
 
-.feinman__subtitle {
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -291,7 +283,7 @@
 
 /* далее описана ссылка раздела Фейнман */
 
-.feinman__link {
+.feynman__link {
   /* расположение ссылки */
   position: absolute;
   top: 50%;
@@ -456,5 +448,5 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  color: white;
+  color: #fff;
 }
