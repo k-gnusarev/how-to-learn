@@ -1,0 +1,11 @@
+/* свойства подзаголовков таблицы */
+
+.section-subtitle {
+  /* размеры блока */
+  max-width: 60%;
+  /* стиль текста */
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}

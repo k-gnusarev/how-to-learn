@@ -1,0 +1,12 @@
+/* описываем раздел "Техники обучения" */
+
+.techniques {
+  /* задаём размеры и отступы в разделе */
+  max-width: 80%;
+  padding-top: 100px;
+  /* преобразуем во флекс-контейнер для выравнивания элементов */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}

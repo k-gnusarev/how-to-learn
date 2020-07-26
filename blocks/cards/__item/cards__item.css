@@ -1,0 +1,6 @@
+/* стиль для контейнера карточки */
+
+.cards-item {
+  display: flex;
+  flex-direction: column;
+}

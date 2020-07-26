@@ -1,0 +1,12 @@
+.logo_place_header {
+  /* задаём размер, уникальный для шапки */
+  height: 32px;
+  /* позиционируем элемент */
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  /* положение поверх других блоков */
+  z-index: 1;
+  /* лого шапки */
+  background-image: url(/images/logo_place_header.svg);
+}

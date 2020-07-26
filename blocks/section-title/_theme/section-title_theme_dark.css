@@ -1,0 +1,7 @@
+/* далее описываются свойства таблицы для тёмной темы */
+
+.section-title_theme_dark {
+  z-index: 1;
+  margin-top: 90px;
+  color: #fff;
+}

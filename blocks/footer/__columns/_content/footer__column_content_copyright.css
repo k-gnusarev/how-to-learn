@@ -1,0 +1,10 @@
+/* определяем раздел подвала о копирайте */
+
+.footer__column_content_copyright {
+  /* ширина раздела */
+  flex-basis: 711px;
+  /* располагаем элементы секции */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

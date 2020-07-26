@@ -1,0 +1,11 @@
+/* стиль для цитаты в разделе о Салмане Хане */
+
+.khan__quote {
+  /* позиционируем и задаём размеры цитаты */
+  max-width: 790px;
+  margin: 50px 0 36px;
+  /* задаём стиль текста */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}

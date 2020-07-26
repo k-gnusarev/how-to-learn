@@ -1,0 +1,10 @@
+/* описываем колонку main-text */
+
+.two-columns__main-text {
+  /* задаём размеры */
+  max-width: 80%;
+  min-width: 784px;
+  /* добавляем расстояние между абзацами */
+  display: grid;
+  grid-row-gap: 30px;
+}

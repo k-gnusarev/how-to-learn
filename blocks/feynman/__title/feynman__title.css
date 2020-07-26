@@ -1,0 +1,12 @@
+/* далее описан заголовок раздела Фейнман */
+
+.feynman__title {
+  /* размеры и расположение заголовка */
+  max-width: 648px;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  /* стиль заголовка */
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}

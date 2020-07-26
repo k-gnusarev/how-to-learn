@@ -1,0 +1,6 @@
+/* темная тема для заголовка таблицы */
+
+.table__heading_theme_dark {
+  color: #fff;
+  margin-bottom: 20px;
+}

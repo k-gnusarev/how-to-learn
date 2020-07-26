@@ -1,0 +1,7 @@
+/* подзаголовок раздела о Фейнмане */
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}

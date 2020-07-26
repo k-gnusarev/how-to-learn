@@ -1,0 +1,7 @@
+/* стиль для строчки с автором цитаты */
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}

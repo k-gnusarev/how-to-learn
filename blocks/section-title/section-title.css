@@ -1,0 +1,12 @@
+/* свойства заголовков таблицы */
+
+.section-title {
+  /* размер блока и отступ от подзаголовка */
+  max-width: 60%;
+  margin-bottom: 20px;
+  /* стиль текста */
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+/* определяем расположение элементов в секции с соцсетями */
+
+.footer__column_content_social {
+  flex-direction: column;
+  align-items: flex-start;
+}

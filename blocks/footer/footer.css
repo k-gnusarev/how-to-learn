@@ -1,0 +1,14 @@
+/* ниже описывается подвал сайта */
+
+.footer {
+  /* определяем минимальную высоту подвала */
+  min-height: 350px;
+  /* тёмная тема */
+  background-color: #1f1f1f;
+  color: #fff;
+  /* далее блок преобразуется во флекс-контейнер для расстановки элементов */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}

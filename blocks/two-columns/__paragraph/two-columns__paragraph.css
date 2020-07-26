@@ -1,0 +1,7 @@
+/* стиль текста введения */
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}

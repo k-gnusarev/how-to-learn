@@ -1,0 +1,13 @@
+/* заголовок шапки */
+
+.header__title {
+  /* размер и положение блока заголовка */
+  max-width: 730px;
+  margin-left: 64px;
+  /* стиль текста заголовка */
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  /* положение поверх других блоков */
+  z-index: 1;
+}

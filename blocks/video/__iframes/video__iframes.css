@@ -1,0 +1,9 @@
+/* оформление раздела с видео */
+
+.video__iframes {
+  /* отрицательный маржин, чтобы айфреймы "слегка наезжали" на следующий раздел */
+  margin: 50px auto -50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

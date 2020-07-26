@@ -1,0 +1,7 @@
+/* свойства ячейки таблицы */
+
+.table__cell {
+  text-align: left;
+  margin-top: 60px;
+  width: 250px;
+}

@@ -1,0 +1,14 @@
+/* далее описывается раздел Kaufman */
+
+.kaufman {
+  /* относительное позиционирование для корректной расстановки элементов */
+  position: relative;
+  /* преобразовал во флекс-контейнер для позиционирования элементов */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* тёмная тема */
+  background-color: #1f1f1f;
+  /* скрытие выступа треугольника */
+  overflow: hidden;
+}

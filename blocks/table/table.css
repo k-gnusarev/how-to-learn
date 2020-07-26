@@ -1,0 +1,10 @@
+/* далее описывается таблица */
+
+.table {
+  /* размер таблицы */
+  max-width: 1100px;
+  /* делаем таблицу флекс-контейнером для выстраивания ячеек */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

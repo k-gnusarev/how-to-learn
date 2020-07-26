@@ -1,0 +1,7 @@
+/* задаём параметры логотипов раздела с ресурсами */
+
+.resources__logo {
+  width: 270px;
+  height: 28px;
+  object-fit: contain;
+}

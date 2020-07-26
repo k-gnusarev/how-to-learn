@@ -1,0 +1,7 @@
+/* темная тема для ячеек таблицы */
+
+.table__cell_theme_dark {
+  color: #fff;
+  max-width: 200px;
+  margin-top: 80px;
+}

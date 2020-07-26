@@ -1,0 +1,7 @@
+/* ниже описывается блок description */
+
+.description {
+  /* прописываем отступ от шапки */
+  margin-top: 100px;
+  display: flex;
+}

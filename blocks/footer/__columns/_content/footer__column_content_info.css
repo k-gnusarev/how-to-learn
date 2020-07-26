@@ -1,0 +1,6 @@
+/* определяем расположение элементов в секции со ссылками */
+
+.footer__column_content_info {
+  flex-direction: column;
+  align-items: flex-start;
+}

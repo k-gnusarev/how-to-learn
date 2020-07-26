@@ -1,0 +1,10 @@
+/* элемент с именем автора */
+
+.footer__author {
+  /* определяем размер надписи */
+  margin: 18px 0 18px;
+  /* стиль текста */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}

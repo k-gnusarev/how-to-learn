@@ -1,0 +1,10 @@
+/* задаём размеры и положение блока содержимого в подвале  */
+
+.footer__columns {
+  width: 90%;
+  margin: 60px auto 40px;
+  /* преобразуем во флекс-контейнер для расстановки элементов */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,7 @@
+/* параметры логотипа в подвале  */
+
+.logo_place_footer {
+  height: 35px;
+  /* лого шапки */
+  background-image: url(/images/logo_place_footer.svg);
+}

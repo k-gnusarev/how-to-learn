@@ -1,0 +1,7 @@
+/* стиль для контейнера книги */
+
+.khan__book-container {
+  margin-top: 68px;
+  display: flex;
+  align-items: flex-start;
+}

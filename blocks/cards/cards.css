@@ -1,0 +1,9 @@
+/* описываем блок контейнера карточек */
+
+.cards {
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+
+}

@@ -1,0 +1,10 @@
+/* далее описыватся раздел Цифры и факты */
+
+.digits {
+  /* выравниваем компоненты секции */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* задаём отступы для раздела */
+  padding: 100px 0;
+}
