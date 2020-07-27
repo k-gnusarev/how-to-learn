@@ -3,5 +3,5 @@
 .logo_place_footer {
   height: 35px;
   /* лого шапки */
-  background-image: url(/images/logo_place_footer.svg);
+  background-image: url(../../../images/logo_place_footer.svg);
 }
