@@ -2,6 +2,14 @@
 
 .resources__logo {
   width: 270px;
-  height: 28px;
+  height: 38px;
   object-fit: contain;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* прозрачность при наведении мыши на ссылку */
+
+.resources__logo:hover {
+  opacity: .5;
 }

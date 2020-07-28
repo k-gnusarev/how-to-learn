@@ -10,4 +10,12 @@
   font-size: 36px;
   font-weight: normal;
   color: #000;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* прозрачность при наведении мыши на ссылку */
+
+.feynman__link:hover {
+opacity: .5;
 }

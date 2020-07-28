@@ -4,7 +4,6 @@
   /* ширина раздела */
   flex-basis: 711px;
   /* располагаем элементы секции */
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }

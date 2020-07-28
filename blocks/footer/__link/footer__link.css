@@ -5,4 +5,12 @@
   font-size: 18px;
   font-weight: normal;
   color: #fff;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* прозрачность при наведении мыши на ссылку */
+
+.footer__link:hover {
+opacity: .5;
 }

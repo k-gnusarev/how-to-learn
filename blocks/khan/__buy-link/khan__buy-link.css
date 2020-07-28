@@ -5,4 +5,12 @@
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* прозрачность при наведении мыши на ссылку */
+
+.khan__buy-link:hover {
+opacity: .5;
 }
