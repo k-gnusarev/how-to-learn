@@ -1,9 +1,17 @@
 /* оформление раздела с видео */
 
 .video__iframes {
-  /* отрицательный маржин, чтобы айфреймы "слегка наезжали" на следующий раздел */
-  margin: 50px auto -50px;
-  display: flex;
+  margin: 50px auto 0;
+  /*display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;*/
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 20px;
+
 }

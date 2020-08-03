@@ -102,5 +102,14 @@
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 
+/* стили для формы отзыва */
+@import url(../blocks/feedback/feedback.css);
+@import url(../blocks/feedback/__heading/feedback__heading.css);
+@import url(../blocks/feedback/__form/feedback__form.css);
+@import url(../blocks/feedback/__label/feedback__label.css);
+@import url(../blocks/feedback/__item/feedback__item.css);
+@import url(../blocks/feedback/__text-input/feedback__text-input.css);
+@import url(../blocks/feedback/__button/feedback__button.css);
+
 /* анимации и переходы */
 @import url(../blocks/rotation/rotation.css);

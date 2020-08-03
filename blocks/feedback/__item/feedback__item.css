@@ -1,0 +1,12 @@
+.feedback__item {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: inherit;
+  border: #f2f2f2 1px solid;
+  box-sizing: border-box;
+}
+
+.feedback__item:focus {
+  outline-color: #fff6c5;
+}
+

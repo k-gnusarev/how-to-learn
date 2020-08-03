@@ -1,0 +1,11 @@
+@font-face {
+  src: url('./FiraSansCondensed-Regular.ttf');
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url('./FiraSansCondensed-Bold.ttf');
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: bold;
+}

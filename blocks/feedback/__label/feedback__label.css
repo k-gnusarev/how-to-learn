@@ -1,0 +1,7 @@
+.feedback__label {
+  line-height: 30px;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}

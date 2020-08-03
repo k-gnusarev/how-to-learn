@@ -1,0 +1,8 @@
+.feedback__button {
+  width: fit-content;
+  height: 32px;
+  background-color: #2f80ed;
+  color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}

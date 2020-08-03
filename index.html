@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -78,6 +79,7 @@
         <div class="video__iframes">
           <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/i-84yB91vm8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
       <section class="oakley">
@@ -221,7 +223,19 @@
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <a href="/index.html" class="logo logo_place_footer"></a>
-          <p class="footer__author">&copy; 2020. Константин Гнусарёв</p>
+          <p class="footer__author">&copy; 2020. Константин Гнусарёв • <a href="#" class="footer__link">Отправить отзыв</a></p>
+          <div class="feedback">
+            <h2 class="feedback__heading">Оставьте ваш отзыв</h2>
+            <form class="feedback__form" action="#" method="post">
+              <label class="feedback__label" for="email">Email</label>
+              <input class="feedback__item feedback__email-input" type="email" name="email" id="email"  placeholder="Email">
+
+              <label class="feedback__label" for="feedback">Ваши комментарии</label>
+              <textarea class="feedback__item feedback__text-input" name="feedback" id="feedback" placeholder="Ваше мнение очень важно для нас"></textarea>
+
+              <input class="feedback__button" type="submit" disabled></input>
+            </form>
+          </div>
         </div>
         <div class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О практикуме</h4>
